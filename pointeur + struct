@@ -1,0 +1,26 @@
+variable, dans la mémoire vive
+valeur, ce qu'il y a dans la mémoire
+
+char* n'est pas une variable en lui meme il pointe sur l'addresse d'un char
+
+void* est un pointer général, pour le coder pour le faire pointer sur une autre variable : ptr_general = (voir* ) &c; ici le &c est un char on met les () pour forcer.
+
+tableau {
+    int tab[100]; (raccourci à malloc)
+}
+
+struct = la base de l'orientation objet, il est limité.
+(dans les sujets il y aura un typedef avant le nom de la struct qui est utilisé pour faire un surnom)
+exemple :
+typedef struct perso {
+    char *name;
+    int level;
+} s-perso; // le surnom
+
+pour appeler une struct :
+struct perso mon_perso;
+struct perso *pstr
+pstr = ....malloc...
+psrt -> level// si tu veux créer un pointeur
+struct perso mon_perso;
+mon_perso.level = 12;
