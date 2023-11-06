@@ -7,14 +7,13 @@
 
 NAME = libmy.a
 
-lb = lib/*.c
+fichier = $(wildcard *.c)
 
 all: libmy.a
 
 libmy.a:
-	gcc -c my_project.c
+	gcc -c $(fichier)
 	ar rc $(NAME) *.o
-	ar rc $(lb) *.o
 
 clean:
 	rm -f *.o
