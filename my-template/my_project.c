@@ -4,3 +4,4 @@
 ** File description:
 ** small template for project
 */
+#include "my_project.h"
