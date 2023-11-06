@@ -7,15 +7,14 @@
 
 NAME = libmy.a
 
-disp = display.c display2.c addflg.c
-
-put = put_all.c put_all2.c put_scwr.c my_putfloat.c getpars.c
+lb = lib/*.c
 
 all: libmy.a
 
 libmy.a:
-	gcc -c $(disp) $(put) my_printf.c
+	gcc -c my_project.c
 	ar rc $(NAME) *.o
+	ar rc $(lb) *.o
 
 clean:
 	rm -f *.o
