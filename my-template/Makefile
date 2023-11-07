@@ -2,18 +2,16 @@
 ## EPITECH PROJECT, 2023
 ## Makefile
 ## File description:
-## makes mylib
+## makes
 ##
-
-NAME = libmy.a
 
 fichier = $(wildcard *.c)
 
-all: libmy.a
+all: my_ls
 
-libmy.a:
-	gcc -c $(fichier)
-	ar rc $(NAME) *.o
+my_ls:
+	gcc -c $(fichier) my_project.c
+	ar rc $(fichier) *.o
 
 clean:
 	rm -f *.o
@@ -21,6 +19,6 @@ clean:
 	rm -f *#
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(fichier)
 
 re: fclean all
