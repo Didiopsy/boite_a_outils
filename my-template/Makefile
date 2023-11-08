@@ -10,7 +10,7 @@ fichier = $(wildcard *.c)
 all: my_ls
 
 my_ls:
-	gcc -c $(fichier) my_project.c
+	gcc $(fichier) -o my_project
 	ar rc $(fichier) *.o
 
 clean:
