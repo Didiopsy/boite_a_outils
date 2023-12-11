@@ -1,8 +1,14 @@
 /*
 ** EPITECH PROJECT, 2023
-** my_project.h
+** my_template
 ** File description:
-** lib + struct
+** include , struct , def
 */
+#ifndef MY_H_
+    #define MY_H_
 
-#pragma once
+
+
+
+
+#endif

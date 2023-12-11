@@ -2,16 +2,18 @@
 ## EPITECH PROJECT, 2023
 ## Makefile
 ## File description:
-## makes
+## makes mylib
 ##
 
 fichier = $(wildcard *.c)
 
-all: my_ls
+NAME = my_organized
 
-my_ls:
-	gcc $(fichier) -o my_project
-	ar rc $(fichier) *.o
+all: my_organized
+
+my_organized:
+	gcc $(fichier) -o my_organized
+	chmod 755 my_organized
 
 clean:
 	rm -f *.o
@@ -19,6 +21,6 @@ clean:
 	rm -f *#
 
 fclean: clean
-	rm -f $(fichier)
+	rm -f $(NAME)
 
 re: fclean all
